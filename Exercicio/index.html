@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercício - DataTables, Gráficos e Mapa</title>
+
+  <!-- Bibliotecas (CSS) -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Exercício: Tabela, Gráficos e Mapa</h1>
+</header>
+
+<main>
+
+  <!-- ============ EXERCÍCIO 1 ============ -->
+  <section>
+    <h2>1. Tabela de notas (DataTables)</h2>
+    <table id="tabela" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>1 Bim</th>
+          <th>2 Bim</th>
+          <th>3 Bim</th>
+          <th>4 Bim</th>
+          <th>Média</th>
+          <th>Conceito</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- ============ EXERCÍCIO 2 ============ -->
+  <section>
+    <h2>2. Gráficos</h2>
+    <div class="graficos">
+      <div class="grafico-barras">
+        <h3>Média de cada aluno</h3>
+        <div class="caixa-grafico"><canvas id="graficoBarras"></canvas></div>
+      </div>
+      <div class="grafico-linhas">
+        <h3>Notas por bimestre (Pedro, João, Carla e Ana)</h3>
+        <div class="caixa-grafico"><canvas id="graficoLinhas"></canvas></div>
+      </div>
+      <div class="grafico-pizza">
+        <h3>Aprovados x Reprovados</h3>
+        <div class="caixa-grafico"><canvas id="graficoPizza"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXERCÍCIO 3 ============ -->
+  <section>
+    <h2>3. Mapa de Mauá</h2>
+    <div id="mapa"></div>
+  </section>
+
+</main>
+
+<!-- Bibliotecas (JS) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Seu JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

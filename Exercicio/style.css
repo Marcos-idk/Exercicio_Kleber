@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f3f5f9;
+  color: #222;
+}
+
+header {
+  background: #1f3a68;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+}
+
+h2 { margin-top: 0; color: #1f3a68; }
+
+/* Conceito na tabela */
+.aprovado  { color: #1b8a3a; font-weight: bold; }
+.reprovado { color: #c62828; font-weight: bold; }
+
+/* Gráficos */
+.graficos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grafico-barras,
+.grafico-linhas { grid-column: 1 / -1; }
+
+.caixa-grafico { position: relative; height: 340px; }
+.grafico-pizza .caixa-grafico { height: 320px; }
+
+/* Mapa */
+#mapa {
+  height: 480px;
+  border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+  .graficos { grid-template-columns: 1fr; }
+}
